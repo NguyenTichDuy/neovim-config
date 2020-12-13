@@ -19,7 +19,6 @@ set number
 set relativenumber
 set showcmd
 set virtualedit=block
-
 " Case sensitivity
 " I tried this while ignoring case and it was driving me crazy
 set noignorecase
@@ -28,7 +27,7 @@ set nocursorcolumn
 set cursorline
 " set NerdTree devicons
 let g:webdevicons_enable_nerdtree = 1
-
+let g:webdevicons_conceal_nerdtree_brackets = 1
 " Mouse in all but command mode.
 set mouse=nvirh
 " Use right click as a menu, not extending selection.
@@ -470,22 +469,6 @@ map <F9> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<
       \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
       \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 " }}}
-
-"web devicons
-let g:lightline = {
-      \ 'component_function': {
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ }
-      \ }
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
 
 " Load config of plugin
 for f in split(glob('~/.config/nvim/configs/*.vim'), '\n')
