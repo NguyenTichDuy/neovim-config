@@ -14,5 +14,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
