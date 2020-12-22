@@ -21,7 +21,9 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
