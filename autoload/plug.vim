@@ -106,7 +106,7 @@ if s:is_win && &shellslash
 else
   let s:me = resolve(expand('<sfile>:p'))
 endif
-let s:bas_spec = { 'branch': '', 'frozen': 0 }
+let s:base_spec = { 'branch': '', 'frozen': 0 }
 let s:TYPE = {
 \   'string':  type(''),
 \   'list':    type([]),
@@ -2794,4 +2794,4 @@ if exists('g:plugs')
 endif
 
 let &cpo = s:cpo_save
-unlet s:cpo_savee
+unlet s:cpo_save
