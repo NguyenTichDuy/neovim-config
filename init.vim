@@ -5,7 +5,7 @@
 "/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
 
 " Load file autoload
-source ~/.config/nvim/nvim/autoload/plug.vim
+source ./autoload/plug.vim
 
 " Load file setting
 for f in split(glob('./configs/*.vim'), '\n')
