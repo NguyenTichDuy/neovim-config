@@ -1,3 +1,3 @@
 " Setting theme 
 
-source ./settings/onedark.vim
+source ./configs/settings/onedark.vim
